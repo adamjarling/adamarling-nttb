@@ -1,10 +1,14 @@
-const siteTitle = "Next.js TypeScript Tailwind Boilerplate";
+const siteTitle =
+  "Adam J. Arling - rock, blues guitarist, bassist and front end engineer living in Chicago USA";
 const ogImage = "/images/simone-secci-WNLzDp4elWs-unsplash.jpg";
 const url = "https://adamarling.com";
 
+const description =
+  "Adam J. Arling is a musician and front end engineer living in Chicago USA";
+
 const config = {
   OPEN_GRAPH: {
-    description: "Showcasing the ..",
+    description,
     images: [
       {
         url: `${
@@ -19,8 +23,8 @@ const config = {
     url,
   },
   SITE: {
-    description: "Description of the site",
-    name: "My Website",
+    description,
+    name: "Adam J. Arling",
     title: siteTitle,
     url,
   },
