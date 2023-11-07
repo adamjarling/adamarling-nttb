@@ -9,8 +9,9 @@ const BannerWrapper = () => {
       images={[
         {
           mediaQuery: `(max-width: 640px)`,
-          src: "/images/IMG_1697.jpg ",
-          srcSet: "/images/IMG_1697.jpg",
+          src: "../masonry-images/310692583_534548905340415_6981777318805823681_n.jpeg",
+          srcSet:
+            "../masonry-images/310692583_534548905340415_6981777318805823681_n.jpeg",
         },
         {
           mediaQuery: "(min-width: 641px)",

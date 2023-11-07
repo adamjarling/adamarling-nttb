@@ -12,7 +12,7 @@ import { usePathname } from "next/navigation";
 interface NavProps {
   links: {
     href: string;
-    label: string;
+    name: string;
   }[];
 }
 
@@ -23,7 +23,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
 
   const textVariants = {
     start: {
-      color: ["/", "/about"].includes(pathname || "") ? "white" : "black",
+      color: "white",
     },
     end: {
       color: "white",
@@ -82,8 +82,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
                 isMobileNavOpen && "hidden"
               }`}
             >
-              <span className="hidden lg:block">{config.SITE.name}</span>
-              <span className="lg:hidden">O.K.</span>
+              <span className="">{config.SITE.name}</span>
             </motion.a>
           </div>
           <div className={`hidden lg:flex uppercase opacity-100 z-30`}>
@@ -94,11 +93,11 @@ const Nav: React.FC<NavProps> = ({ links }) => {
                 transition={{
                   duration: 0.5,
                 }}
-                key={link.label}
+                key={link.name}
                 href={link.href}
                 className={`mx-4 text-sm`}
               >
-                {link.label}
+                {link.name}
               </motion.a>
             ))}
           </div>
@@ -132,12 +131,12 @@ const Nav: React.FC<NavProps> = ({ links }) => {
               <div className="container mt-20">
                 {links.map((link) => (
                   <a
-                    key={link.label}
+                    key={link.name}
                     href={link.href}
                     className={`block text-3xl py-2 text-white hover:text-gray-200`}
                     onClick={toggleMobileNav}
                   >
-                    {link.label}
+                    {link.name}
                   </a>
                 ))}
                 <div className="mt-20">

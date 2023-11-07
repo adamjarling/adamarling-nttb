@@ -1,17 +1,9 @@
 import { SocialIcons } from "zuma-blocks";
-import { socialMedia } from "../nttb-config";
+import { nav, socialMedia } from "../nttb-config";
 
-export type FooterNav = {
-  name: string;
-  href: string;
-};
+import { type Nav } from "../nttb-config";
 
-export const footerNav: Array<FooterNav> = [
-  { name: "About", href: "#" },
-  { name: "Blog", href: "#" },
-  { name: "Jobs", href: "#" },
-  { name: "Press", href: "#" },
-];
+export const footerNav: Array<Nav> = nav;
 
 export type FooterSocial = {
   name: string;
@@ -31,13 +23,13 @@ export const footerSocials = [
     icon: SocialIcons.InstagramIcon,
   },
   {
+    name: "Github",
+    href: socialMedia.github.url,
+    icon: SocialIcons.GitHubIcon,
+  },
+  {
     name: "Twitter",
     href: socialMedia.twitter.url,
     icon: SocialIcons.TwitterIcon,
-  },
-  {
-    name: "YouTube",
-    href: socialMedia.youTube.url,
-    icon: SocialIcons.YouTubeIcon,
   },
 ];

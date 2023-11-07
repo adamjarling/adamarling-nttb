@@ -1,4 +1,10 @@
-import { FiFacebook, FiInstagram, FiYoutube } from "react-icons/fi";
+import {
+  FiFacebook,
+  FiGithub,
+  FiInstagram,
+  FiTwitter,
+  FiYoutube,
+} from "react-icons/fi";
 
 import Link from "next/link";
 import React from "react";
@@ -11,14 +17,19 @@ const socialIcons = [
     url: socialMedia.instagram.url,
   },
   {
+    label: "Github",
+    Icon: FiGithub,
+    url: socialMedia.github.url,
+  },
+  {
     label: "Facebook",
     Icon: FiFacebook,
     url: socialMedia.facebook.url,
   },
   {
-    label: "YouTube",
-    Icon: FiYoutube,
-    url: socialMedia.youTube.url,
+    label: "X",
+    Icon: FiTwitter,
+    url: socialMedia.twitter.url,
   },
 ];
 

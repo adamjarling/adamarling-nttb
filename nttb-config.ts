@@ -1,6 +1,6 @@
 const siteTitle =
   "Adam J. Arling - rock, blues guitarist, bassist and front end engineer living in Chicago USA";
-const ogImage = "/images/simone-secci-WNLzDp4elWs-unsplash.jpg";
+const ogImage = "/images/adam-vigo.jpeg";
 const url = "https://adamarling.com";
 
 const description =
@@ -30,41 +30,42 @@ const config = {
   },
 };
 
-const nav = [
+export type Nav = {
+  href: string;
+  name: string;
+};
+
+const nav: Array<Nav> = [
   {
     href: "/about",
-    label: "About",
+    name: "About",
   },
   {
-    href: "/masonry-gallery",
-    label: "Masonry Gallery",
+    href: "/bands",
+    name: "Bands",
   },
   {
-    href: "/shows",
-    label: "Shows",
+    href: "/work",
+    name: "Work",
   },
 ];
 
 const socialMedia = {
-  instagram: {
-    handle: "",
-    url: "",
-  },
   facebook: {
-    handle: "",
-    url: "",
+    handle: "adam.arling",
+    url: "https://www.facebook.com/adam.arling/",
+  },
+  github: {
+    handle: "adamjarling",
+    url: "https://github.com/adamjarling",
+  },
+  instagram: {
+    handle: "adamjarling",
+    url: "https://www.instagram.com/adamjarling/",
   },
   twitter: {
-    handle: "",
-    url: "",
-  },
-  spotify: {
-    handle: "",
-    url: "",
-  },
-  youTube: {
-    handle: "",
-    url: "",
+    handle: "AdamJArling",
+    url: "https://twitter.com/AdamJArling",
   },
 };
 
