@@ -15,6 +15,14 @@ html {
     @apply font-medium uppercase;
   }
 
+  p {
+    @apply mb-4 leading-relaxed;
+  }
+
+  main a {
+    @apply text-teal-500 underline hover:text-teal-600 hover:no-underline hover:transition-all hover:duration-300;
+  }
+
   .banner-headline {
     @apply font-semibold text-center text-5xl md:text-8xl lg:text-[128px] leading-none pb-3;
   }
