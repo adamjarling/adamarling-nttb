@@ -6,7 +6,7 @@ import WorkContentWrapper from "@/components/work/ContentWrapper";
 const WorkPage = () => {
   return (
     <Main>
-      <Banner className="md:py-20">
+      <Banner className="">
         <BannerHeadline>Work</BannerHeadline>
       </Banner>
 
