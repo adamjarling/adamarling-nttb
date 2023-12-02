@@ -18,7 +18,7 @@ const WorkCards: React.FC<WorkCardsProps> = ({ workCards = [] }) => {
             <p className="mt-2 text-sm text-gray-500">{workCard.description}</p>
           </div>
           <div className="flex flex-wrap mt-4">
-            {workCard.tags.map((tag, index) => (
+            {workCard.tags?.map((tag, index) => (
               <span
                 key={index}
                 className="px-2 py-1 mr-2 text-sm text-gray-500 bg-gray-100 rounded-md"

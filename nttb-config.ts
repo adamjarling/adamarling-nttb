@@ -36,10 +36,10 @@ export type Nav = {
 };
 
 const nav: Array<Nav> = [
-  {
-    href: "/about",
-    name: "About",
-  },
+  // {
+  //   href: "/about",
+  //   name: "About",
+  // },
   {
     href: "/bands",
     name: "Bands",

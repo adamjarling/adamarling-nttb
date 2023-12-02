@@ -41,16 +41,16 @@ export default async function Home() {
           <BannerHeadline>Europe 2023</BannerHeadline>
           <p className="">
             Super excited to be touring in Spain, England and Scotland with the
-            gentlemen in Warrior Soul. Click here for dates!
+            gentlemen in Warrior Soul.
           </p>
         </Banner>
 
         {images && <MasonryGallery dir={folder} images={shuffledImages} />}
 
-        <Banner className="text-white bg-black">
+        {/* <Banner className="text-white bg-black">
           <BannerHeadline>Another Banner Headline</BannerHeadline>
           <p>Some subhead content here</p>
-        </Banner>
+        </Banner> */}
       </Main>
     </>
   );

@@ -1,9 +1,9 @@
 "use client";
 
+import { Button, ExternalLink } from "zuma-blocks";
 import React, { use } from "react";
 
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
-import { ExternalLink } from "zuma-blocks";
 import { FiGithub } from "react-icons/fi";
 import WorkCards from "./WorkCards";
 import { workCards } from "@/data/work-cards";
@@ -21,8 +21,20 @@ const WorkContentWrapper = () => {
           </ExternalLink>
           . Our teams builds open-source web applications to empower
           discoverability of Cultural Heritage assets for researchers in the
-          Humanities. Here&apos;s some of our work.
+          Humanities.
         </p>
+
+        <p>
+          <ExternalLink
+            classNames="px-8 py-4 no-underline border-teal-400 uppercase mt-3 mb-5 inline-block border"
+            href="https://github.com/adamjarling"
+          >
+            <FiGithub className="inline-block w-6 h-6 mr-2" />
+            View Work
+          </ExternalLink>
+        </p>
+
+        <p>Here&apos;s some recent projects.</p>
 
         <ul className="my-10 space-y-10">
           {workCards.map((workCard, index) => (
