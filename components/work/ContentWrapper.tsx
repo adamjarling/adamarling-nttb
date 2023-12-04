@@ -24,30 +24,40 @@ const WorkContentWrapper = () => {
           Humanities.
         </p>
 
-        <p>
+        <p className="py-5">
           <ExternalLink
             classNames="px-8 py-4 no-underline border-teal-400 uppercase mt-3 mb-5 inline-block border"
             href="https://github.com/adamjarling"
           >
             <FiGithub className="inline-block w-6 h-6 mr-2" />
-            View Work
+            View Work on Github
           </ExternalLink>
         </p>
 
-        <p>Here&apos;s some recent projects.</p>
+        <p>Here are some recent projects.</p>
 
-        <ul className="my-10 space-y-10">
+        <ul className="my-10 space-y-16">
           {workCards.map((workCard, index) => (
             <li className="space-y-2" key={index}>
               <h3 className="text-2xl">{workCard.title}</h3>
               <p className="text-gray-400">{workCard.description}</p>
-              <div className="flex items-center justify-center space-x-3">
+              <div className="flex items-center justify-center space-x-5">
                 <a href={workCard.href}>
-                  <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                  <ArrowTopRightOnSquareIcon className="w-7 h-7" />
                 </a>
                 <a href={workCard.githubUrl}>
-                  <FiGithub className="w-6 h-6" />
+                  <FiGithub className="w-7 h-7" />
                 </a>
+              </div>
+              <div className="pt-3">
+                {workCard.tags?.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="p-2 mr-2 text-sm text-gray-400 bg-gray-800 rounded-sm"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
             </li>
           ))}
