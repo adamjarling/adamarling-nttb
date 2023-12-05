@@ -3,8 +3,10 @@ import abbaramaLogo from "public/images/bands/abbarama-logo-colors.png";
 import abbaramaPhoto from "public/images/bands/_EGB4672.jpg";
 import baLogo from "public/images/bands/black-angus-font-logo-white.png";
 import baPhoto from "public/images/bands/black-angus-photo2.jpg";
+import cynicsPic from "public/images/bands/cynics-rnr.jpg";
 import furLogo from "public/images/bands/2023-furbaby-logo_white.png";
 import furPic from "public/images/bands/furbaby-leon-spain.jpeg";
+import keithPic from "public/images/bands/keith-blues-junkies-2022.jpeg";
 import mcLogo from "public/images/bands/mc-logo_white_cropped.png";
 import mcPic from "public/images/bands/the-midnight-calls_promo-pic.jpg";
 import tlvLogo from "public/images/bands/tlv-sweet-salvation-logo-white.png";
@@ -52,9 +54,9 @@ export const bands = [
     photoCredit: "",
     position: "Guitar",
     url: {
-      facebook: "",
-      instagram: "",
-      website: "",
+      facebook: "https://www.facebook.com/themidnightcallsofficial",
+      instagram: "https://www.instagram.com/themidnightcallsofficial/",
+      website: "https://www.themidnightcalls.com/",
     },
     years: "2022 - current",
   },
@@ -65,9 +67,9 @@ export const bands = [
     photo: urgePic,
     position: "Bass",
     url: {
-      facebook: "",
-      instagram: "",
-      website: "",
+      facebook: "https://www.facebook.com/urgeoverkillmusic",
+      instagram: "https://www.instagram.com/urgeoverkill",
+      website: "https://www.urgeoverkill.com/",
     },
     years: "2014 - current",
   },
@@ -78,9 +80,9 @@ export const bands = [
     photo: furPic,
     position: "Guitar & Vocals",
     url: {
-      facebook: "",
-      instagram: "",
-      website: "",
+      facebook: "https://www.facebook.com/furBabyAndtheTightSpaces",
+      instagram: "https://www.instagram.com/furbaby_rocks/",
+      website: "https://www.furbaby.rocks/",
     },
     years: "2020 - current",
   },
@@ -94,9 +96,9 @@ export const bands = [
     photoCredit: "",
     position: "Guitar",
     url: {
-      facebook: "",
+      facebook: "https://www.facebook.com/warriorsoulofficial/",
       instagram: "",
-      website: "",
+      website: "https://www.warriorsoulofficial.com/",
     },
     years: "2015 - current",
   },
@@ -108,13 +110,27 @@ export const bands = [
     photoCredit: "",
     position: "Bass",
     url: {
-      facebook: "",
-      instagram: "",
-      website: "",
+      facebook: "https://www.facebook.com/Black-Angus-Chicago-117537881596118/",
+      instagram: "https://www.instagram.com/blackangusrock/",
+      website: "https://www.blackangusrock.com/",
     },
     years: "2016 - current",
   },
-
+  {
+    description:
+      "Chicago West Side Blues, occasionally I'll sit in with Keith's band!",
+    logo: null,
+    name: "Keith Scott and the Electric Blues Junkies",
+    photo: keithPic,
+    photoCredit: "",
+    position: "Bass",
+    url: {
+      facebook: "https://www.facebook.com/keith.scott.5454",
+      instagram: "https://www.instagram.com/fishing_blues/",
+      website: "https://www.keithscottblues.com/",
+    },
+    years: "2014 - current",
+  },
   {
     description: "ABBA Tribute band from Los Angeles, CA and Stockholm, Sweden",
     logo: abbaramaLogo,
@@ -132,7 +148,7 @@ export const bands = [
     description: "Garage rock legends from Pittsburgh, PA and Get Hip Records",
     logo: null,
     name: "The Cynics",
-    photo: null,
+    photo: cynicsPic,
     position: "Bass",
     url: {
       facebook: "",

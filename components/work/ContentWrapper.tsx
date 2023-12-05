@@ -63,7 +63,7 @@ const WorkContentWrapper = () => {
           ))}
         </ul>
 
-        <p>Tag cloud goes here of tools used</p>
+        {/* <p>Tag cloud goes here of tools used</p> */}
 
         {/* <p>
           I build stuff in TypeScript, React, Next.js, Vite, and publish
