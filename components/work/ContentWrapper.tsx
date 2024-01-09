@@ -13,13 +13,13 @@ const WorkContentWrapper = () => {
     <div className="">
       <div className="container max-w-4xl text-center">
         <p>
-          I&apos;m a Senior Front End Engineer / Manager at{" "}
+          I&apos;m a Senior Front End Engineer at{" "}
           <ExternalLink href="">Northwestern University Libraries</ExternalLink>
           ,{" "}
           <ExternalLink href="https://dc.library.northwestern.edu/about">
             Repository and Digital Curation
           </ExternalLink>
-          . Our teams builds open-source web applications to empower
+          . Our team builds open-source web applications to empower
           discoverability of Cultural Heritage assets for researchers in the
           Humanities.
         </p>
