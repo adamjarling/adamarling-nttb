@@ -1,3 +1,4 @@
+import BackgroundTexture from "../BackgroundTexture";
 import React from "react";
 
 interface BannerProps {
@@ -7,7 +8,7 @@ interface BannerProps {
 
 const Banner: React.FC<BannerProps> = ({ children, className }) => {
   return (
-    <section className={`text-center py-8 md:py-10 ${className}`}>
+    <section className={`text-center py-8 md:py-10 relative ${className}`}>
       <div className="container">{children}</div>
     </section>
   );

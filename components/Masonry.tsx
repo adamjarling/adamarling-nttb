@@ -21,7 +21,7 @@ export type MasonryImage = {
 };
 
 interface Props {
-  dir: string;
+  dir?: string;
   images: MasonryImage[];
   manifest?: {
     [key: string]: {

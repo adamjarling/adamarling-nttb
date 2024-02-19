@@ -7,7 +7,7 @@ const About = () => {
   return (
     <Main flushTop={false}>
       <Banner>
-        <BannerHeadline>About</BannerHeadline>
+        <BannerHeadline>Writing</BannerHeadline>
       </Banner>
 
       <section className="text-center section">Some text goes here</section>
