@@ -1,13 +1,11 @@
 "use client";
 
-import { Button, ExternalLink } from "zuma-blocks";
 import { FiDownload, FiGithub } from "react-icons/fi";
-import React, { use } from "react";
 
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
+import { ExternalLink } from "zuma-blocks";
+import Link from "next/link";
 import ProjectsGrid from "./ProjectsGrid";
-import WorkCards from "./WorkCards";
-import { workCards } from "@/data/work-cards";
+import React from "react";
 
 const WorkContentWrapper = () => {
   return (
@@ -36,20 +34,21 @@ const WorkContentWrapper = () => {
               <FiGithub className="inline-block w-6 h-6 mr-2" />
               View Work on Github
             </ExternalLink>
-            <ExternalLink
-              classNames="button button-outline"
-              href="https://github.com/adamjarling"
-            >
+            <Link className="button button-outline" href="/cv">
               <FiDownload className="inline-block w-6 h-6 mr-2" />
               CV / Resume
-            </ExternalLink>
+            </Link>
           </p>
-
-          <p>Here are some recent projects.</p>
         </div>
       </div>
 
       <ProjectsGrid />
+
+      <div className="container">
+        <p className="py-20 text-center">
+          Include a grid 2x2 here of other highlighted sites
+        </p>
+      </div>
     </div>
   );
 };

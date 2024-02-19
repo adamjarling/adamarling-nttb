@@ -36,17 +36,25 @@ export type Nav = {
 };
 
 const nav: Array<Nav> = [
-  // {
-  //   href: "/about",
-  //   name: "About",
-  // },
+  {
+    href: "/work",
+    name: "Work",
+  },
+  {
+    href: "/writing",
+    name: "Writing",
+  },
+  {
+    href: "/photos",
+    name: "Photos",
+  },
   {
     href: "/bands",
     name: "Bands",
   },
   {
-    href: "/work",
-    name: "Work",
+    href: "/cv",
+    name: "C.V.",
   },
 ];
 
@@ -62,6 +70,10 @@ const socialMedia = {
   instagram: {
     handle: "adamjarling",
     url: "https://www.instagram.com/adamjarling/",
+  },
+  linkedIn: {
+    handle: "adamjarling",
+    url: "https://www.linkedin.com/in/adamjarling/",
   },
   twitter: {
     handle: "AdamJArling",

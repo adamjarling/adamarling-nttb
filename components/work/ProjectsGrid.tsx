@@ -10,7 +10,7 @@ import { workCards } from "@/data/work-cards";
 
 const ProjectsGrid = () => {
   return (
-    <section className="container">
+    <section className="container pt-10">
       <ul className="grid grid-cols-1 gap-32 my-10 mt-20 md:grid-cols-1">
         {workCards.map((workCard, index) => (
           <motion.li
@@ -20,7 +20,8 @@ const ProjectsGrid = () => {
             initial={{ opacity: 0, y: -30 }}
             transition={{ duration: 2 }}
           >
-            <h3 className="pb-5 text-4xl break-words md:text-7xl">
+            <div className="w-full border-t border-gray-800" />
+            <h3 className="py-5 text-4xl break-words md:text-7xl">
               {workCard.title}
             </h3>
             <Image

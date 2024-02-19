@@ -3,20 +3,22 @@
 import { HeroImage } from "zuma-blocks";
 import React from "react";
 
+const mobilePic = "/images/IMG_7183.jpg";
+const desktopPic = "/images/adam-metal-banner.jpg";
+
 const BannerWrapper = () => {
   return (
     <HeroImage
       images={[
         {
           mediaQuery: `(max-width: 640px)`,
-          src: "../masonry-images/310692583_534548905340415_6981777318805823681_n.jpeg",
-          srcSet:
-            "../masonry-images/310692583_534548905340415_6981777318805823681_n.jpeg",
+          src: desktopPic,
+          srcSet: desktopPic,
         },
         {
           mediaQuery: "(min-width: 641px)",
-          src: "/images/adam-vigo.jpeg",
-          srcSet: "/images/adam-vigo.jpeg",
+          src: desktopPic,
+          srcSet: desktopPic,
         },
         // {
         //   mediaQuery: "",
