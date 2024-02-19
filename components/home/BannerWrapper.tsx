@@ -4,7 +4,7 @@ import { HeroImage } from "zuma-blocks";
 import React from "react";
 
 const mobilePic = "/images/IMG_7183.jpg";
-const desktopPic = "/images/adam-metal-banner.jpg";
+const desktopPic = "/images/adam-metal-banner-cropped.jpg";
 
 const BannerWrapper = () => {
   return (

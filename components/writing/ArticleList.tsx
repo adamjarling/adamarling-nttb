@@ -10,7 +10,10 @@ const ArticleList = () => {
   return (
     <ul className="space-y-16">
       {articles.map((article, index) => (
-        <li className="grid grid-cols-1 gap-6 md:grid-cols-12">
+        <li
+          key={article.title}
+          className="grid grid-cols-1 gap-6 md:grid-cols-12"
+        >
           <div className="col-span-1 md:col-span-3">
             <Image
               className="rounded-lg"
