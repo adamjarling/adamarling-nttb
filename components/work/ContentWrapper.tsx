@@ -26,7 +26,7 @@ const WorkContentWrapper = () => {
             Cultural Heritage.
           </p>
 
-          <p className="flex flex-col items-center justify-center mt-6 mb-10 space-y-5 md:space-y-0 md:flex-row md:space-x-5">
+          <div className="flex flex-col items-center justify-center mt-6 mb-10 space-y-5 md:space-y-0 md:flex-row md:space-x-5">
             <ExternalLink
               classNames="button button-outline"
               href="https://github.com/adamjarling"
@@ -38,7 +38,7 @@ const WorkContentWrapper = () => {
               <FiDownload className="inline-block w-6 h-6 mr-2" />
               CV / Resume
             </Link>
-          </p>
+          </div>
         </div>
       </div>
 

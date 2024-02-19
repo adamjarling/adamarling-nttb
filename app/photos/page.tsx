@@ -2,6 +2,7 @@ import MasonryGallery, { MasonryImage } from "@/components/Masonry";
 
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
+import BannerSubheadline from "@/components/banner/Subheadline";
 import Image from "next/image";
 import Main from "@/components/Main";
 import { promises as fs } from "fs";
@@ -34,9 +35,9 @@ const PhotosPage = async () => {
     <Main flushTop={false}>
       <Banner>
         <BannerHeadline>Photos</BannerHeadline>
-        <p className="max-w-4xl mx-auto text-gray-300">
+        <BannerSubheadline>
           Making memories, capturing moments, and sharing experiences.
-        </p>
+        </BannerSubheadline>
       </Banner>
 
       <MasonryGallery images={shuffledImages} />
