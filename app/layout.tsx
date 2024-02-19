@@ -2,6 +2,7 @@ import "./globals.css";
 
 import { config, nav } from "nttb-config";
 
+import BackgroundTexture from "@/components/BackgroundTexture";
 import Footer from "@/components/Footer";
 import { Libre_Franklin } from "next/font/google";
 import { Metadata } from "next";
@@ -36,6 +37,7 @@ export default function RootLayout({
       <link rel="icon" href="/favicon.png" type="image/png" />
 
       <body className="relative bg-black text-slate-50">
+        {/* <BackgroundTexture /> */}
         <div className="flex flex-col justify-between h-screen ">
           <Nav links={nav} />
           <div className="">{children}</div>

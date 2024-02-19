@@ -30,4 +30,12 @@ html {
   .section {
     @apply max-w-3xl py-8 mx-auto;
   }
+
+  .button {
+    @apply inline-block px-8 py-4 no-underline uppercase border border-teal-400 hover:bg-teal-400 hover:text-black hover:transition-all hover:duration-500;
+  }
+
+  .button-outline {
+    @apply border border-teal-400 hover:bg-teal-400 hover:text-black;
+  }
 }
