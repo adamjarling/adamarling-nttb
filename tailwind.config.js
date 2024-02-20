@@ -21,6 +21,9 @@ module.exports = {
         128: "32rem",
         144: "36rem",
       },
+      textShadow: {
+        default: "0 2px 5px rgba(0, 0, 0, 0.5)",
+      },
     },
   },
   plugins: [],

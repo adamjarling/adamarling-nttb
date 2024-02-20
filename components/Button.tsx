@@ -5,9 +5,10 @@ interface Props {
   children: React.ReactNode;
   cb: () => void;
   size?: "sm";
+  className?: string;
 }
 
-const Button: React.FC<Props> = ({ children, cb, size }) => {
+const Button: React.FC<Props> = ({ children, cb, className, size }) => {
   return (
     <motion.button
       whileHover={{
@@ -16,9 +17,9 @@ const Button: React.FC<Props> = ({ children, cb, size }) => {
           duration: 0.5,
         },
       }}
-      className={`py-5 ${
+      className={`py-5 font-medium uppercase bg-white px-7 ${
         size && size === "sm" ? "text-sm" : "text-xl"
-      } font-medium uppercase bg-white px-7`}
+      } ${className && className}`}
       onClick={cb}
     >
       {children}

@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 
+import HomeBannerSocials from "./home/BannerSocials";
 import Image from "next/image";
 
 type ParallaxHeroProps = {
@@ -35,14 +36,16 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({
       <div className="container absolute z-10 w-full mt-20 text-center transform -translate-x-1/2 lg:mt-24 lg:text-left left-1/2">
         <div className="lg:max-w-md">
           <h1 className="inline-block mb-4 text-4xl leading-none text-white md:text-6xl">
-            {headline}
+            <span className="px-5 bg-black bg-opacity-80">{headline}</span>
           </h1>
           {subHeadline && (
-            <p className="max-w-sm mx-auto mb-5 text-lg text-white md:max-w-md md:text-xl">
+            <p className="hidden max-w-sm px-2 py-1 mx-auto mb-5 text-lg text-white bg-black md:inline bg-opacity-80 md:max-w-md md:text-xl">
               {subHeadline}
             </p>
           )}
           {Button && Button}
+
+          <HomeBannerSocials />
         </div>
       </div>
     </div>
