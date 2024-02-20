@@ -10,11 +10,14 @@ const ArticleList = () => {
   return (
     <ul className="space-y-16">
       {articles.map((article, index) => (
-        <li
+        <motion.li
           key={article.title}
           className="grid grid-cols-1 gap-6 md:grid-cols-12"
+          whileInView={{ opacity: 1, y: 1 }}
+          initial={{ opacity: 0, y: -30 }}
+          transition={{ duration: 2 }}
         >
-          <div className="col-span-1 md:col-span-3">
+          <div className="col-span-1 md:col-span-2">
             <Image
               className="rounded-lg"
               src={article.imageUrl || "/images/placeholder.jpg"}
@@ -23,7 +26,7 @@ const ArticleList = () => {
               height={500}
             />
           </div>
-          <div className="col-span-1 space-y-2 md:col-span-9">
+          <div className="col-span-1 space-y-2 md:col-span-10">
             <ExternalLink href={article.url} classNames="no-underline">
               <motion.h2
                 className="text-2xl normal-case"
@@ -47,7 +50,7 @@ const ArticleList = () => {
               )}
             </div>
           </div>
-        </li>
+        </motion.li>
       ))}
     </ul>
   );

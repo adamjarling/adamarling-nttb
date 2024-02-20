@@ -1,4 +1,8 @@
-# nextjs-typescript-tailwind-boilerplate
+# Adam J. Arling website
+
+## Built with
+
+[Next/Tailwind/TypeScript starter project](https://github.com/adamjarling/nextjs-typescript-tailwind-boilerplate), a little pet project.
 
 Baseline starter project files for a NextJS (server components) React application which uses TypeScript and TailwindCSS. Intended to be a helpful starting point.
 
