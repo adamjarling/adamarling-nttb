@@ -15,18 +15,14 @@ export default function Home() {
       <Main flushTop>
         <ParallaxHero
           imageUrl="/images/adam-porto.jpeg"
-          headline="Front End Engineer, Musician"
+          headline="Front End Engineer & Musician"
           altText="Porto, Porgtual street art"
-          subHeadline="I’m Adam, a front end engineer based in Chicago. I enjoy creating exceptional user experiences, reading, traveling, and messing with my cat."
+          subHeadline="Hi, I'm Adam a developer &amp; musician based in Chicago. I make web apps for Northwestern University Libraries &amp; love blues music, traveling, reading, and messing with my cat."
         />
         <Banner className="">
           <BannerHeadline>Hi / Hallo</BannerHeadline>
           <p className="">
-            I&apos;m Adam, a Front End Engineer with 16+ years of experience in
-            React, TypeScript, JavaScript, and building scalable web
-            applications. I&apos;ve acquired a deep understanding of
-            component-based architecture and extensive knowledge of modern front
-            end frameworks and libraries. Here is some latest projects...
+            Check out some of the latest projects I&apos;ve been working on...
           </p>
           <Link className="mt-5 button" href="/work">
             <span className="flex items-center justify-center">

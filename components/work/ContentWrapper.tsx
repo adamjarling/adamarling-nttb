@@ -7,13 +7,17 @@ import Link from "next/link";
 import ProjectsGrid from "./ProjectsGrid";
 import React from "react";
 
+const subheadText =
+  "I have 16+ years of experience in React, TypeScript, JavaScript, and building scalable web applications. Deep understanding of component-based architecture and extensive knowledge of modern front end frameworks and libraries. Excited to leverage expertise in creating exceptional user experiences, lead development teams, and drive innovation in front end development.";
+
 const WorkContentWrapper = () => {
   return (
     <div className="">
       <div className="container max-w-4xl text-center">
         <div className="space-y-10">
           <p className="text-gray-300">
-            I am a Senior Front End Engineer at{" "}
+            I have 16+ years of experience in React, TypeScript, JavaScript, and
+            building scalable web applications. I am a Senior Developer at{" "}
             <ExternalLink href="">
               Northwestern University Libraries
             </ExternalLink>
@@ -21,9 +25,10 @@ const WorkContentWrapper = () => {
             <ExternalLink href="https://dc.library.northwestern.edu/about">
               Repository and Digital Curation
             </ExternalLink>
-            . My team builds open-source web applications for digital humanists
-            and researchers to enhance discoverability of digital records for
-            Cultural Heritage.
+            , where we build open-source, web applications for scholarly
+            research in Cultural Heritage and the humanities. I also am very
+            curious about blockchain technology and distributed systems, and
+            decentralization.
           </p>
 
           <div className="flex flex-col items-center justify-center mt-6 mb-10 space-y-5 md:space-y-0 md:flex-row md:space-x-5">
@@ -44,11 +49,11 @@ const WorkContentWrapper = () => {
 
       <ProjectsGrid />
 
-      <div className="container">
+      {/* <div className="container">
         <p className="py-20 text-center">
           Include a grid 2x2 here of other highlighted sites
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
