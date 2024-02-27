@@ -38,6 +38,29 @@ export const workCards: WorkCard[] = [
   },
   {
     description:
+      "Connecting independent music venues and creators with the world. Ran by artists, for artists.",
+    githubUrl: "",
+    href: "https://www.zuma.live/",
+    image: "images/work/work-card-zuma.jpg",
+    tags: [
+      "Vimeo API",
+      "Supabase",
+      "Stripe",
+      "PostGreSQL",
+      "API",
+      "NextJS",
+      "TailwindCSS",
+      "SendGrid",
+    ],
+    title: "Zuma Live",
+    projectDescription: [
+      "Architected a full-stack, livestream video platform ticketing service connecting independent music venues, artists and digital concert attendees for 100+ events.",
+      "In parallel, built an authenticated, multi-user tier administrative back-end to manage livestreams, customers, payments, venues, artists, billing, and real-time revenue forecasting / graph visualizations for over 2500 customers.",
+      "A full stack architecture solution handling ticketing, payments and customer records built with Stripe, Supabase Auth, DB and File-storage, Vimeo API, NextJS, Custom API Middleware, PostGres, SendGrid, React Query, Chakra UI, TailwindCSS, Sentry, ChartJS and more.",
+    ],
+  },
+  {
+    description:
       "Extensible IIIF front-end toolkit and Manifest viewer. Accessible. Composable. Open Source.",
     githubUrl: "https://github.com/samvera-labs/clover-iiif",
     href: "https://samvera-labs.github.io/clover-iiif/",
@@ -91,29 +114,6 @@ export const workCards: WorkCard[] = [
     projectDescription: [
       "Built a trade forecasting/tracking system for cryptocurrency trading, providing individual and dashboard alerts when Stop trigger prices exceed user-defined thresholds",
       "Supports 8 global currency pairs (ie. BTC/USD, BTC/GBP, etc), and provides real-time crypto pricing information for end users for the top 100 market cap coins (BTC, ETH, etc).",
-    ],
-  },
-  {
-    description:
-      "Connecting independent music venues and creators with the world. Ran by artists, for artists.",
-    githubUrl: "",
-    href: "https://www.zuma.live/",
-    image: "images/work/work-card-zuma.jpg",
-    tags: [
-      "Vimeo API",
-      "Supabase",
-      "Stripe",
-      "PostGreSQL",
-      "API",
-      "NextJS",
-      "TailwindCSS",
-      "SendGrid",
-    ],
-    title: "Zuma Live",
-    projectDescription: [
-      "Architected a full-stack, livestream video platform ticketing service connecting independent music venues, artists and digital concert attendees for 100+ events.",
-      "In parallel, built an authenticated, multi-user tier administrative back-end to manage livestreams, customers, payments, venues, artists, billing, and real-time revenue forecasting / graph visualizations for over 2500 customers.",
-      "A full stack architecture solution handling ticketing, payments and customer records built with Stripe, Supabase Auth, DB and File-storage, Vimeo API, NextJS, Custom API Middleware, PostGres, SendGrid, React Query, Chakra UI, TailwindCSS, Sentry, ChartJS and more.",
     ],
   },
 ];

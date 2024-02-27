@@ -36,9 +36,9 @@ export default function RootLayout({
       {/* Favicon */}
       <link rel="icon" href="/favicon.png" type="image/png" />
 
-      <body className="relative bg-black text-slate-50">
+      <body className="relative bg-black text-slate-50 bg-gradient-to-br from-gray-900 to-black">
         {/* <BackgroundTexture /> */}
-        <div className="flex flex-col justify-between h-screen ">
+        <div className="">
           <Nav links={nav} />
           <div className="">{children}</div>
           <Footer />

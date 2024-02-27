@@ -39,7 +39,7 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({
             <span className="px-1 bg-black bg-opacity-80">{headline}</span>
           </h1>
           {subHeadline && (
-            <p className="hidden max-w-sm px-2 py-1 mx-auto mb-5 text-lg text-white bg-black md:inline bg-opacity-80 md:max-w-md md:text-xl">
+            <p className="hidden max-w-sm px-1 py-1 mx-auto mb-5 text-lg text-white bg-black md:inline bg-opacity-80 md:max-w-md md:text-xl">
               {subHeadline}
             </p>
           )}

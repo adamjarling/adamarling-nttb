@@ -16,19 +16,11 @@ const WorkContentWrapper = () => {
       <div className="container max-w-4xl text-center">
         <div className="space-y-10">
           <p className="text-gray-300">
-            I have 16+ years of experience in React, TypeScript, JavaScript, and
-            building scalable web applications. I am a Senior Developer at{" "}
-            <ExternalLink href="">
-              Northwestern University Libraries
-            </ExternalLink>
-            ,{" "}
-            <ExternalLink href="https://dc.library.northwestern.edu/about">
-              Repository and Digital Curation
-            </ExternalLink>
-            , where we build open-source, web applications for scholarly
-            research in Cultural Heritage and the humanities. I also am very
-            curious about blockchain technology and distributed systems, and
-            decentralization.
+            I&apos;ve been a Front End Engineer / UI Developer / JavaScript app
+            builder for over 16 years, working in consulting, cultural heritage,
+            the financial sector, arts & entertainment industry and top digital
+            agencies. Here is a few random recent projects. Check out my Github
+            link below!
           </p>
 
           <div className="flex flex-col items-center justify-center mt-6 mb-10 space-y-5 md:space-y-0 md:flex-row md:space-x-5">
@@ -48,12 +40,6 @@ const WorkContentWrapper = () => {
       </div>
 
       <ProjectsGrid />
-
-      {/* <div className="container">
-        <p className="py-20 text-center">
-          Include a grid 2x2 here of other highlighted sites
-        </p>
-      </div> */}
     </div>
   );
 };

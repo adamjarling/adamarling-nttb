@@ -2,7 +2,7 @@ import HomePage from "./home-page";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Page title goes here",
+  title: "Adam J. Arling homepage",
 };
 
 export default async function Page() {

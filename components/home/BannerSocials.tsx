@@ -1,10 +1,14 @@
 import React from "react";
+import { clsx } from "clsx";
+
+const classes =
+  "p-1 -m-1 bg-teal-500 shadow rounded-xl group hover:bg-teal-400 hover:shadow-lg";
 
 const HomeBannerSocials = () => {
   return (
     <div className="flex justify-center gap-6 mt-6 lg:justify-start">
       <a
-        className="p-1 -m-1 bg-teal-500 rounded-xl group"
+        className={classes}
         aria-label="Follow on GitHub"
         href="https://github.com/adamjarling"
       >
@@ -21,7 +25,7 @@ const HomeBannerSocials = () => {
         </svg>
       </a>
       <a
-        className="p-1 -m-1 bg-teal-500 rounded-xl group"
+        className={classes}
         aria-label="Follow on LinkedIn"
         href="https://www.linkedin.com/in/adamjarling/"
       >
@@ -34,11 +38,7 @@ const HomeBannerSocials = () => {
         </svg>
       </a>
 
-      <a
-        className="p-1 -m-1 bg-teal-500 rounded-xl group"
-        aria-label="Follow on X"
-        href="#"
-      >
+      <a className={classes} aria-label="Follow on X" href="#">
         <svg
           viewBox="0 0 24 24"
           aria-hidden="true"
@@ -48,7 +48,7 @@ const HomeBannerSocials = () => {
         </svg>
       </a>
       <a
-        className="p-1 -m-1 bg-teal-500 rounded-xl group"
+        className={classes}
         aria-label="Follow on Instagram"
         href="https://www.instagram.com/adamjarling/"
       >

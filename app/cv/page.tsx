@@ -1,16 +1,18 @@
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
+import BannerSubheadline from "@/components/banner/Subheadline";
 import Image from "next/image";
 import Main from "@/components/Main";
-import BannerSubheadline from "@/components/banner/Subheadline";
 
-const About = () => {
+const CV = () => {
   return (
     <Main flushTop={false}>
       <Banner>
         <BannerHeadline>C.V.</BannerHeadline>
         <BannerSubheadline>Available upon request...</BannerSubheadline>
       </Banner>
+
+      <div className="h-48"></div>
 
       {/* <section className="container">
         <iframe
@@ -24,4 +26,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default CV;
