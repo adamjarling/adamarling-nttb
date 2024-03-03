@@ -16,7 +16,7 @@ const WorkContentWrapper = () => {
       <div className="container max-w-4xl text-center">
         <div className="space-y-10">
           <p className="text-gray-300">
-            I&apos;ve been a Front End Engineer / UI Developer / JavaScript app
+            I’ve been a Front End Engineer / UI Developer / JavaScript app
             builder for over 16 years, working in consulting, cultural heritage,
             the financial sector, arts & entertainment industry and top digital
             agencies. Here is a few random recent projects. Check out my Github

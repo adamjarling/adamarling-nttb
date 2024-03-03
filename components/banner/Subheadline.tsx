@@ -16,7 +16,7 @@ const BannerSubheadline = ({ children }: { children: ReactNode }) => {
       transition={{
         duration: 0.5,
       }}
-      className="max-w-4xl pt-6 mx-auto text-gray-300"
+      className="max-w-4xl pt-6 mx-auto font-light text-gray-300"
     >
       {children}
     </motion.p>

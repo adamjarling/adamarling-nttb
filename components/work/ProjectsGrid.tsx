@@ -33,9 +33,9 @@ const ProjectsGrid = () => {
               width={1280}
             />
 
-            <div className="break-words">
+            <div className="">
               <ExternalLink href={workCard.href}>
-                <span className="flex items-center justify-center text-lg">
+                <span className="flex items-center justify-center text-sm lg:text-lg">
                   {workCard.href}{" "}
                   <ArrowTopRightOnSquareIcon className="pl-2 w-7 h-7" />
                 </span>
@@ -63,7 +63,7 @@ const ProjectsGrid = () => {
               {workCard.tags?.map((tag, index) => (
                 <span
                   key={index}
-                  className="p-2 m-2 text-xs text-gray-400 bg-gray-800 rounded-lg lg:text-sm "
+                  className="p-2 m-2 text-xs text-gray-400 rounded-lg bg-neutral-900 lg:text-sm "
                 >
                   {tag}
                 </span>

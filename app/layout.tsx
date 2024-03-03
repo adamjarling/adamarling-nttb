@@ -32,12 +32,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={libreFranklin.className}>
+    <html lang="en" className={`${libreFranklin.className}`}>
       {/* Favicon */}
       <link rel="icon" href="/favicon.png" type="image/png" />
 
-      <body className="relative bg-black text-slate-50 bg-gradient-to-br from-gray-900 to-black">
-        {/* <BackgroundTexture /> */}
+      <body className="relative text-slate-50 common-gradient">
         <div className="">
           <Nav links={nav} />
           <div className="">{children}</div>

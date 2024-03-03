@@ -36,6 +36,10 @@ html {
   }
 
   .button-outline {
-    @apply border border-teal-400 hover:bg-teal-400 hover:text-black;
+    @apply border border-teal-400 hover:bg-teal-400 hover:text-neutral-900;
+  }
+
+  .common-gradient {
+    @apply bg-neutral-900 bg-gradient-to-br from-slate-700 to-neutral-900;
   }
 }

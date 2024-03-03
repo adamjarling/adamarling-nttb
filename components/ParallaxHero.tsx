@@ -24,22 +24,31 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({
   const y = useTransform(scrollYProgress, [0, 1], ["0", "10%"]);
 
   return (
-    <div className="relative w-full overflow-hidden h-[80vh]">
-      <div className="absolute z-10 w-full h-32 bg-transparent opacity-50 bg-gradient-to-t from-transparent to-black" />
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="relative w-full overflow-hidden h-[100vh]"
+    >
+      <div className="absolute z-10 w-full bg-transparent opacity-50 h-80 md:h-2/3 lg:h-32 bg-gradient-to-t from-transparent to-black" />
+
       <MotionImage
-        style={{ y }}
+        //style={{ y }}
         src={imageUrl}
         alt={altText}
         fill
-        className="z-0 object-cover"
+        className="z-0 object-cover opacity-85"
       />
-      <div className="container absolute z-10 w-full mt-20 text-center transform -translate-x-1/2 lg:mt-24 lg:text-left left-1/2">
+      {/* gradient overlay left side of viewport */}
+      <div className="absolute w-2/3 h-screen bg-transparent opacity-60 bg-gradient-to-l from-transparent to-black" />
+
+      <div className="container absolute z-10 w-full mt-32 text-center transform -translate-x-1/2 md:mt-40 lg:mt-24 lg:text-left left-1/2">
         <div className="lg:max-w-md">
           <h1 className="inline-block mb-4 text-4xl leading-none text-white md:text-6xl">
-            <span className="px-1 bg-black bg-opacity-80">{headline}</span>
+            <span className="px-1">{headline}</span>
           </h1>
           {subHeadline && (
-            <p className="hidden max-w-sm px-1 py-1 mx-auto mb-5 text-lg text-white bg-black md:inline bg-opacity-80 md:max-w-md md:text-xl">
+            <p className="hidden max-w-sm px-1 py-1 mx-auto mb-5 text-lg font-thin text-white md:inline bg-opacity-80 md:max-w-md md:text-xl">
               {subHeadline}
             </p>
           )}
@@ -48,7 +57,7 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({
           <HomeBannerSocials />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

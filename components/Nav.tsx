@@ -19,7 +19,9 @@ interface NavProps {
 const Nav: React.FC<NavProps> = ({ links }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const { scrollYProgress } = useScroll();
+
   const pathname = usePathname();
+  const isTransparent = pathname && ["/"].includes(pathname);
 
   const textVariants = {
     start: {
@@ -59,9 +61,11 @@ const Nav: React.FC<NavProps> = ({ links }) => {
     <div className="fixed top-0 z-20 w-full">
       <div className="container">
         <motion.div
-          className="absolute inset-0 bg-black"
+          className={`absolute inset-0 ${
+            isTransparent ? "bg-transparent" : "common-gradient"
+          } `}
           initial={{ opacity: 0 }}
-          animate={{ opacity: opacity - 0.1 }}
+          animate={{ opacity: opacity - 0.05 }}
           transition={{
             duration: 0.5,
           }}
@@ -123,7 +127,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
           </div>
           {isMobileNavOpen && (
             <motion.div
-              className={`lg:hidden fixed inset-0 bg-black z-10 h-screen`}
+              className={`lg:hidden fixed inset-0 common-gradient z-10 h-screen`}
               initial="closed"
               animate="open"
               variants={navVariants}

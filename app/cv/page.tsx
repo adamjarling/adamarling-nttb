@@ -9,19 +9,19 @@ const CV = () => {
     <Main flushTop={false}>
       <Banner>
         <BannerHeadline>C.V.</BannerHeadline>
-        <BannerSubheadline>Available upon request...</BannerSubheadline>
+        <BannerSubheadline>
+          Please find my CV below. Created using Figma.
+        </BannerSubheadline>
       </Banner>
 
-      <div className="h-48"></div>
-
-      {/* <section className="container">
+      <section className="container">
         <iframe
-          src="/assets/Adam J. Arling - Senior Front End Developer.pdf#zoom=100&&navpanes=0"
+          src="/assets/Adam_J_Arling_Front_End_Engineer.pdf#zoom=100&&navpanes=0"
           title="Adam's CV"
           width="100%"
           height="1600px"
         ></iframe>
-      </section> */}
+      </section>
     </Main>
   );
 };

@@ -37,8 +37,10 @@ const SocialMediaIcons = () => {
   return (
     <ul className="flex">
       {socialIcons.map((si) => (
-        <li key={si.label} className="px-2 text-stone-400">
-          <Link href={si.url}>{si.Icon && <si.Icon size="24" />}</Link>
+        <li key={si.label} className="px-4">
+          <Link href={si.url} className="text-teal-500 hover:text-teal-400">
+            {si.Icon && <si.Icon size="24" />}
+          </Link>
         </li>
       ))}
     </ul>
