@@ -1,5 +1,7 @@
 # Adam J. Arling website
 
+https://www.adamarling.com/
+
 ## Built with
 
 [Next/Tailwind/TypeScript starter project](https://github.com/adamjarling/nextjs-typescript-tailwind-boilerplate), a little pet project.
