@@ -18,9 +18,8 @@ const WorkContentWrapper = () => {
           <p className="text-gray-300">
             I’ve been a Front End Engineer / UI Developer / JavaScript app
             builder for over 16 years, working in consulting, cultural heritage,
-            the financial sector, arts & entertainment industry and top digital
-            agencies. Here is a few random recent projects. Check out my Github
-            link below!
+            the financial sector, arts & entertainment industry and digital
+            agencies. Here are a few examples of recent projects.
           </p>
 
           <div className="flex flex-col items-center justify-center mt-6 mb-10 space-y-5 md:space-y-0 md:flex-row md:space-x-5">

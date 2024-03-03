@@ -45,10 +45,10 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({
       <div className="container absolute z-10 w-full mt-32 text-center transform -translate-x-1/2 md:mt-40 lg:mt-24 lg:text-left left-1/2">
         <div className="lg:max-w-md">
           <h1 className="inline-block mb-4 text-4xl leading-none text-white md:text-6xl">
-            <span className="px-1">{headline}</span>
+            {headline}
           </h1>
           {subHeadline && (
-            <p className="hidden max-w-sm px-1 py-1 mx-auto mb-5 text-lg font-thin text-white md:inline bg-opacity-80 md:max-w-md md:text-xl">
+            <p className="hidden max-w-sm mx-auto mb-5 text-lg font-thin text-white md:inline bg-opacity-80 md:max-w-md md:text-xl">
               {subHeadline}
             </p>
           )}

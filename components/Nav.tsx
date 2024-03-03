@@ -99,7 +99,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
                 }}
                 key={link.name}
                 href={link.href}
-                className={`mx-4 text-sm`}
+                className={`mx-4 text-sm hover:opacity-80 transition-opacity duration-300`}
               >
                 {link.name}
               </motion.a>

@@ -1,14 +1,13 @@
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import BannerSubheadline from "@/components/banner/Subheadline";
-import Image from "next/image";
 import Main from "@/components/Main";
 
 const CV = () => {
   return (
     <Main flushTop={false}>
       <Banner>
-        <BannerHeadline>C.V.</BannerHeadline>
+        <BannerHeadline>CV</BannerHeadline>
         <BannerSubheadline>
           Please find my CV below. Created using Figma.
         </BannerSubheadline>

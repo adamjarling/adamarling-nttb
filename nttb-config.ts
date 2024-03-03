@@ -54,7 +54,7 @@ const nav: Array<Nav> = [
   },
   {
     href: "/cv",
-    name: "C.V.",
+    name: "CV",
   },
 ];
 

@@ -36,9 +36,7 @@ const PhotosPage = async () => {
       <Banner>
         <BannerHeadline>Photos</BannerHeadline>
         <BannerSubheadline>
-          Some random photos... friends, family always new adventures.
-          Disclaimer: my better half makes me awkwardly pose for photos a lot...
-          I’m really not that ego maniacal.
+          A little glimpse into life outside of the office.
         </BannerSubheadline>
       </Banner>
 

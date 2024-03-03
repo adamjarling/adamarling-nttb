@@ -9,12 +9,10 @@ const Bands = () => {
   return (
     <Main flushTop={false}>
       <Banner>
-        <BannerHeadline>Bands</BannerHeadline>
+        <BannerHeadline>Music</BannerHeadline>
         <BannerSubheadline>
-          Yea, I like to rock too 😀 Toured everywhere in USA and Europe with my
-          best friends, playing basement caves to Madison Square Garden.
-          It&apos;s been quite a trip, so thanks Mom for making us take piano
-          lessons.
+          Here are some of the projects I&apos;ve played guitar and bass in
+          throughout the years..
         </BannerSubheadline>
       </Banner>
 

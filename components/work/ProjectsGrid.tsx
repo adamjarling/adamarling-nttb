@@ -24,14 +24,16 @@ const ProjectsGrid = () => {
             <h3 className="py-5 text-4xl break-words md:text-7xl">
               {workCard.title}
             </h3>
-            <Image
-              alt={workCard.title}
-              className="w-full h-auto rounded-lg"
-              height={800}
-              src={`/${workCard.image}`}
-              sizes="100vw"
-              width={1280}
-            />
+            <ExternalLink href={workCard.href}>
+              <Image
+                alt={workCard.title}
+                className="w-full h-auto rounded-lg"
+                height={800}
+                src={`/${workCard.image}`}
+                sizes="100vw"
+                width={1280}
+              />
+            </ExternalLink>
 
             <div className="">
               <ExternalLink href={workCard.href}>

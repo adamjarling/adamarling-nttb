@@ -36,7 +36,7 @@ const BandsCardList = () => {
               )}
               {!band.logo && <h3 className="text-5xl">{band.name}</h3>}
               <div className="grid grid-cols-12">
-                <ul className="col-span-8 pr-3 text-sm text-gray-400 md:text-lg">
+                <ul className="col-span-8 pb-3 pr-3 text-sm text-gray-400 shadow md:text-lg">
                   <li>{band.description}</li>
                   <li>
                     <i>{band.years}</i>
