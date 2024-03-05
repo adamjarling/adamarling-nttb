@@ -15,7 +15,7 @@ const CV = () => {
 
       <section className="container">
         <iframe
-          src="/assets/Adam_J_Arling_Front_End_Engineer.pdf#zoom=100&&navpanes=0"
+          src="/assets/Adam_J_Arling_Senior_Front_End_Engineer.pdf#zoom=100&&navpanes=0"
           title="Adam's CV"
           width="100%"
           height="1600px"
