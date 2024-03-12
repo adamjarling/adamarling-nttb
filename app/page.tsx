@@ -1,4 +1,5 @@
-import HomePage from "./home-page";
+import Banner from "@/components/home/banner";
+import Main from "@/components/Main";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default async function Page() {
-  return <HomePage />;
+  return (
+    <Main flushTop>
+      <Banner />
+    </Main>
+  );
 }
